@@ -58,7 +58,7 @@ struct ContentView: View {
                             if !revealPassword {
                                 TextField("Your password will appear here", text: $securePassword).frame(width: 343.0).disabled(true).font(.title)
                             } else {
-                                TextField("Your password will appear here", text: $insecurePassword).frame(width: 343.0).disabled(true).font(.title)
+                                TextField("Your password will appear here", text: $insecurePassword).frame(width: 343.0).disabled(false).font(.title)
                             }
                             
                             Toggle(isOn: $revealPassword) {
